@@ -145,9 +145,7 @@ public class FXMLDocumentController implements Initializable {
         @Override
         public void run() {
             if (socket != null) {
-                if (socket.debugFlagIsSet(Constants.instance().DEBUG_STATUS)) {
                     LOGGER.info("ShutdownHook: Shutting down Server Socket");
-                }
                 socket.shutdown();
             }
         }
@@ -158,9 +156,10 @@ public class FXMLDocumentController implements Initializable {
         @Override
         public void onMessage(String line) {
             if (line != null && !line.equals("")) {
-//                rcvdMsgsData.add(line);
+                displayState(ConnectionDisplayState.CONNECTED);
             }
             testLabel.setText("Working!");
+            System.out.println("yee");
 //            processString(line);
         }
 
@@ -170,7 +169,6 @@ public class FXMLDocumentController implements Initializable {
                 s.replace(" ", "");
             }
 
-            //TODO: Do GPS Logic
             int messageId = Integer.parseInt(list[0]);
             double firstLat = Double.parseDouble(list[1])/1000000;
             double firstLon = Double.parseDouble(list[2])/1000000;
@@ -223,11 +221,6 @@ public class FXMLDocumentController implements Initializable {
                 }
             }
         }
-    }
-
-    @FXML
-    private void handleClearRcvdMsgsButton(ActionEvent event) {
-        rcvdMsgsData.clear();
     }
 
     @FXML

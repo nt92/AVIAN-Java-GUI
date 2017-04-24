@@ -7,21 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/src2/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UDP/FXMLDocument.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UDP/FXMLDocumentController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/UDP/SocketClientFX.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/FXSocketExample_jar2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketClient$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketClient$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketServer$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketServer$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketServer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/GenericSocket$SetupThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketserverfx/FXMLDocument.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketserverfx/FXMLDocumentController$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketserverfx/FXMLDocumentController$ConnectionDisplayState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketserverfx/FXMLDocumentController$FxSocketListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketserverfx/FXMLDocumentController$ShutDownThread.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketserverfx/FXMLDocumentController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketserverfx/SocketServerFX$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketserverfx/SocketServerFX.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/socketfx/FxSocketServer.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/socketserverfx/FXMLDocument.fxml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/socketserverfx/FXMLDocumentController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/socketserverfx/SocketServerFX.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/FXSocketExample_jar/FXSocketExample.jar" afterPath="$PROJECT_DIR$/out/artifacts/FXSocketExample_jar/FXSocketExample.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/Constants.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/FXMLDocumentController$FxSocketListener.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/FXMLDocumentController$FxSocketListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/FXMLDocumentController$ShutDownThread.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/FXMLDocumentController$ShutDownThread.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/FXMLDocumentController.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/FXMLDocumentController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/SocketClientFX$1.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/SocketClientFX$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/SocketClientFX.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/SocketClientFX.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketClient.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketServer.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/FxSocketServer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/GenericSocket$SocketReaderThread.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/GenericSocket$SocketReaderThread.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/GenericSocket.class" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketfx/GenericSocket.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/FXMLDocument.fxml" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/socketclientfx/FXMLDocument.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/socketclientfx/FXMLDocument.fxml" afterPath="$PROJECT_DIR$/src/socketclientfx/FXMLDocument.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FXSocketExample/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/out/production/FXSocketExample/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java" afterPath="$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/socketclientfx/SocketClientFX.java" afterPath="$PROJECT_DIR$/src/socketclientfx/SocketClientFX.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/socketfx/FxSocketClient.java" afterPath="$PROJECT_DIR$/src/socketfx/FxSocketClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/socketfx/GenericSocket.java" afterPath="$PROJECT_DIR$/src/socketfx/GenericSocket.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,21 +104,9 @@
       <file leaf-file-name="FxSocketClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/socketfx/FxSocketClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-58">
-              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="108">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UDPRecieve.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/UDP/UDPRecieve.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -105,20 +114,33 @@
       <file leaf-file-name="GenericSocket.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/socketfx/GenericSocket.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
+            <state relative-caret-position="885">
+              <caret line="94" column="16" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#debugFlagIsSet#0;class#GenericSocket#0" expanded="false" />
-                <element signature="docComment;method#setDebugFlags#0;class#GenericSocket#0" expanded="false" />
-                <element signature="docComment;method#getDebugFlags#0;class#GenericSocket#0" expanded="false" />
-                <element signature="docComment;method#clearDebugFlags#0;class#GenericSocket#0" expanded="false" />
                 <element signature="docComment;method#connect#0;class#GenericSocket#0" expanded="false" />
                 <element signature="docComment;method#shutdown#0;class#GenericSocket#0" expanded="false" />
+                <element signature="e#1615#1616#0" expanded="true" />
+                <element signature="e#1638#1639#0" expanded="true" />
                 <element signature="docComment;method#close#0;class#GenericSocket#0" expanded="false" />
                 <element signature="docComment;method#closeAdditionalSockets#0;class#GenericSocket#0" expanded="false" />
-                <element signature="method#waitForReady#0;class#GenericSocket#0" expanded="false" />
                 <element signature="docComment;method#sendMessage#0;class#GenericSocket#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FXMLDocumentController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="228" column="23" lean-forward="false" selection-start-line="228" selection-start-column="23" selection-end-line="228" selection-end-column="23" />
+              <folding>
+                <element signature="method#displayState#0;class#FXMLDocumentController#0" expanded="false" />
+                <element signature="method#processString#0;class#FxSocketListener#0;class#FXMLDocumentController#0" expanded="false" />
+                <element signature="e#7848#7849#0" expanded="true" />
+                <element signature="e#7881#7882#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,6 +162,8 @@
       <find>Label</find>
       <find>onmes</find>
       <find>connectBut</find>
+      <find>connect</find>
+      <find>shutdown</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -159,17 +183,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/socketserverfx/SocketServerFX.java" />
-        <option value="$PROJECT_DIR$/src/socketclientfx/SocketClientFX.java" />
-        <option value="$PROJECT_DIR$/src/socketfx/FxSocketClient.java" />
         <option value="$PROJECT_DIR$/src/socketclientfx/FXMLDocument.fxml" />
-        <option value="$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java" />
         <option value="$PROJECT_DIR$/src/UDP/WriteServer.java" />
         <option value="$PROJECT_DIR$/src/UDP/WriteClient.java" />
         <option value="$PROJECT_DIR$/src/UDP/UDPRecieve.java" />
         <option value="$PROJECT_DIR$/src/socketfx/Constants.java" />
-        <option value="$PROJECT_DIR$/src/socketfx/GenericSocket.java" />
         <option value="$PROJECT_DIR$/src2/socketclientfx/SocketClientFX.java" />
         <option value="$PROJECT_DIR$/src/UDP/FXMLDocument.fxml" />
+        <option value="$PROJECT_DIR$/src/socketfx/FxSocketServer.java" />
+        <option value="$PROJECT_DIR$/src/socketclientfx/SocketClientFX.java" />
+        <option value="$PROJECT_DIR$/src/socketfx/GenericSocket.java" />
+        <option value="$PROJECT_DIR$/src/socketfx/FxSocketClient.java" />
+        <option value="$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java" />
       </list>
     </option>
   </component>
@@ -229,7 +254,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -273,6 +297,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="socketfx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -292,8 +320,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FXSocketExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FXSocketExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FXSocketExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FXSocketExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="out" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -739,12 +796,13 @@
       <workItem from="1492188552285" duration="280000" />
       <workItem from="1492188920980" duration="2216000" />
       <workItem from="1492375275265" duration="615000" />
-      <workItem from="1492797524554" duration="4287000" />
+      <workItem from="1492797524554" duration="4551000" />
+      <workItem from="1493059582811" duration="4416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17203000" />
+    <option name="totallyTimeSpent" value="21883000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="711" extended-state="6" />
@@ -770,7 +828,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39252338" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -793,7 +851,9 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="12" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -801,78 +861,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/socketclientfx/FXMLDocument.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="99" lean-forward="false" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="167" column="33" lean-forward="false" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketclientfx/SocketClientFX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketfx/FxSocketClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="52" column="35" lean-forward="false" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketfx/SocketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="33" column="29" lean-forward="false" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#1732#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketclientfx/FXMLDocument.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="99" lean-forward="true" selection-start-line="17" selection-start-column="99" selection-end-line="17" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="167" column="33" lean-forward="true" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketclientfx/SocketClientFX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="21" lean-forward="false" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/socketfx/FxSocketClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="780">
@@ -906,7 +894,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2445">
           <caret line="163" column="32" lean-forward="false" selection-start-line="163" selection-start-column="32" selection-end-line="163" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="method#displayState#0;class#FXMLDocumentController#0" expanded="false" />
+            <element signature="method#processString#0;class#FxSocketListener#0;class#FXMLDocumentController#0" expanded="false" />
+            <element signature="e#7848#7849#0" expanded="true" />
+            <element signature="e#7881#7882#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -914,14 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1192#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#1033#1034#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1187#1188#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -959,14 +944,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#debugFlagIsSet#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#setDebugFlags#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#getDebugFlags#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#clearDebugFlags#0;class#GenericSocket#0" expanded="false" />
             <element signature="docComment;method#connect#0;class#GenericSocket#0" expanded="false" />
             <element signature="docComment;method#shutdown#0;class#GenericSocket#0" expanded="false" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
             <element signature="docComment;method#close#0;class#GenericSocket#0" expanded="false" />
             <element signature="docComment;method#closeAdditionalSockets#0;class#GenericSocket#0" expanded="false" />
-            <element signature="method#waitForReady#0;class#GenericSocket#0" expanded="false" />
             <element signature="docComment;method#sendMessage#0;class#GenericSocket#0" expanded="false" />
           </folding>
         </state>
@@ -976,14 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#1192#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#1033#1034#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1187#1188#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,14 +985,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#debugFlagIsSet#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#setDebugFlags#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#getDebugFlags#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#clearDebugFlags#0;class#GenericSocket#0" expanded="false" />
             <element signature="docComment;method#connect#0;class#GenericSocket#0" expanded="false" />
             <element signature="docComment;method#shutdown#0;class#GenericSocket#0" expanded="false" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
             <element signature="docComment;method#close#0;class#GenericSocket#0" expanded="false" />
             <element signature="docComment;method#closeAdditionalSockets#0;class#GenericSocket#0" expanded="false" />
-            <element signature="method#waitForReady#0;class#GenericSocket#0" expanded="false" />
             <element signature="docComment;method#sendMessage#0;class#GenericSocket#0" expanded="false" />
           </folding>
         </state>
@@ -1027,7 +1000,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="method#displayState#0;class#FXMLDocumentController#0" expanded="false" />
+            <element signature="method#processString#0;class#FxSocketListener#0;class#FXMLDocumentController#0" expanded="false" />
+            <element signature="e#7848#7849#0" expanded="true" />
+            <element signature="e#7881#7882#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1037,26 +1015,10 @@
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java" />
-    <entry file="file://$PROJECT_DIR$/src/socketfx/FxSocketServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1030">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/socketserverfx/SocketServerFX.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#1192#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#987#988#0" expanded="false" />
-            <element signature="e#1033#1034#0" expanded="false" />
-            <element signature="e#1159#1160#0" expanded="false" />
-            <element signature="e#1187#1188#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1097,47 +1059,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketfx/SocketListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#1732#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketfx/FxSocketClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketclientfx/SocketClientFX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/UDP/WriteServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-116">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1145,23 +1070,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src2/socketclientfx/FXMLDocument.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src2/socketclientfx/FXMLDocument.fxml" />
     <entry file="file://$PROJECT_DIR$/src/socketfx/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1170,95 +1082,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/socketfx/GenericSocket.java">
+    <entry file="file://$PROJECT_DIR$/src2/socketclientfx/SocketClientFX.java" />
+    <entry file="file://$PROJECT_DIR$/src2/socketclientfx/FXMLDocumentController.java" />
+    <entry file="file://$PROJECT_DIR$/src2/socketfx/Constants.java" />
+    <entry file="file://$PROJECT_DIR$/newsrc/socketclientfx/FXMLDocument.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/UDP/FXMLDocument.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/UDP/FXMLDocumentController.java" />
+    <entry file="file://$PROJECT_DIR$/src/UDP/SocketClientFX.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="75" column="5" lean-forward="false" selection-start-line="75" selection-start-column="5" selection-end-line="75" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#debugFlagIsSet#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#setDebugFlags#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#getDebugFlags#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#clearDebugFlags#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#connect#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#shutdown#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#close#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#closeAdditionalSockets#0;class#GenericSocket#0" expanded="false" />
-            <element signature="method#waitForReady#0;class#GenericSocket#0" expanded="false" />
-            <element signature="docComment;method#sendMessage#0;class#GenericSocket#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src2/socketclientfx/SocketClientFX.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="134">
+          <caret line="500" column="22" lean-forward="false" selection-start-line="500" selection-start-column="22" selection-end-line="500" selection-end-column="22" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src2/socketclientfx/FXMLDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="57" column="36" lean-forward="false" selection-start-line="57" selection-start-column="36" selection-end-line="57" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src2/socketfx/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/newsrc/socketclientfx/FXMLDocument.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/UDP/UDPRecieve.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="250">
+          <caret line="31" column="14" lean-forward="true" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UDP/FXMLDocument.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/UDP/FXMLDocumentController.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/event/ActionEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-893">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="178">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/UDP/SocketClientFX.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        <state relative-caret-position="119">
+          <caret line="8413" column="0" lean-forward="false" selection-start-line="8413" selection-start-column="0" selection-end-line="8413" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/scene/control/Button.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Scene.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="2497" column="17" lean-forward="true" selection-start-line="2497" selection-start-column="17" selection-end-line="2497" selection-end-column="17" />
+          <folding>
+            <element signature="e#66617#66618#0" expanded="false" />
+            <element signature="e#66663#66664#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="197" column="0" lean-forward="false" selection-start-line="197" selection-start-column="0" selection-end-line="197" selection-end-column="0" />
+          <folding>
+            <element signature="e#3304#3305#0" expanded="false" />
+            <element signature="e#3336#3337#0" expanded="false" />
+            <element signature="e#4362#4363#0" expanded="false" />
+            <element signature="e#4393#4394#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/event/EventType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="e#4603#4604#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="1657" column="0" lean-forward="false" selection-start-line="1657" selection-start-column="0" selection-end-line="1657" selection-end-column="0" />
+          <folding>
+            <element signature="e#66921#66922#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socketfx/FxSocketServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="101" column="64" lean-forward="true" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socketclientfx/SocketClientFX.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socketfx/SocketListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#1732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socketfx/FxSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socketclientfx/FXMLDocumentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="228" column="23" lean-forward="false" selection-start-line="228" selection-start-column="23" selection-end-line="228" selection-end-column="23" />
+          <folding>
+            <element signature="method#displayState#0;class#FXMLDocumentController#0" expanded="false" />
+            <element signature="method#processString#0;class#FxSocketListener#0;class#FXMLDocumentController#0" expanded="false" />
+            <element signature="e#7848#7849#0" expanded="true" />
+            <element signature="e#7881#7882#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/socketfx/GenericSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="94" column="16" lean-forward="false" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#debugFlagIsSet#0;class#GenericSocket#0" expanded="false" />
+            <element signature="docComment;method#connect#0;class#GenericSocket#0" expanded="false" />
+            <element signature="docComment;method#shutdown#0;class#GenericSocket#0" expanded="false" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1638#1639#0" expanded="true" />
+            <element signature="docComment;method#close#0;class#GenericSocket#0" expanded="false" />
+            <element signature="docComment;method#closeAdditionalSockets#0;class#GenericSocket#0" expanded="false" />
+            <element signature="docComment;method#sendMessage#0;class#GenericSocket#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1273,7 +1251,7 @@
               <type id="library" />
             </show-content>
           </artifact-editor>
-          <last-edited>FXSocketExample:jar2</last-edited>
+          <last-edited>FXSocketExample:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
