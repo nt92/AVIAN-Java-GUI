@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.peertopark.java:geocalc:1.0.3" type="repository">
+    <properties maven-id="com.peertopark.java:geocalc:1.0.3" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/peertopark/java/geocalc/1.0.3/geocalc-1.0.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

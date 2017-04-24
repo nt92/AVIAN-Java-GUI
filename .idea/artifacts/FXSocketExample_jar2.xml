@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FXSocketExample:jar2">
+    <output-path>$PROJECT_DIR$/out/artifacts/FXSocketExample_jar2</output-path>
+    <root id="archive" name="FXSocketExample.jar">
+      <element id="module-output" name="FXSocketExample" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/peertopark/java/geocalc/1.0.3/geocalc-1.0.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
