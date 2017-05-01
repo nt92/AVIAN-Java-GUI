@@ -4,6 +4,8 @@ import java.lang.invoke.MethodHandles;
 import java.net.*;
 import java.util.logging.Logger;
 
+//Generic socket class abstracts the UDP socket implementation to make it easier to create servers and clients
+//with different kinds of protocols
 public abstract class GenericSocket implements SocketListener {
     
     private final static Logger LOGGER = Logger.getLogger(MethodHandles.lookup().lookupClass().getName());
@@ -28,6 +30,7 @@ public abstract class GenericSocket implements SocketListener {
         }  
     }
 
+    //Creates a new SocketWriterThread and sends a string over UDP
     public void send(String host, String port, String s){
         try {
             socketWriterThread = new SocketWriterThread(s);
@@ -110,6 +113,7 @@ public abstract class GenericSocket implements SocketListener {
         }
     }
 
+    //Thread the creates a Reader socket which listens indefinitely (or until disconnect is pressed)
     class SocketReaderThread extends Thread {
 
         @Override

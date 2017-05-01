@@ -9,8 +9,6 @@ import com.peertopark.java.geocalc.Coordinate;
 import com.peertopark.java.geocalc.DegreeCoordinate;
 import com.peertopark.java.geocalc.EarthCalc;
 import com.peertopark.java.geocalc.Point;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -20,8 +18,6 @@ import socketfx.SocketListener;
 
 public class FXMLDocumentController implements Initializable {
 
-    @FXML
-    private ListView<String> rcvdMsgsListView;
     @FXML
     private Button connectButton;
     @FXML
@@ -40,15 +36,10 @@ public class FXMLDocumentController implements Initializable {
     private Label testLabel;
     @FXML
     private Label connectedLabel;
-
     @FXML
     private ToggleGroup group;
 
     private final static Logger LOGGER = Logger.getLogger(MethodHandles.lookup().lookupClass().getName());
-
-    private ObservableList<String> rcvdMsgsData;
-    private ObservableList<String> sentMsgsData;
-
     private boolean connected;
     private volatile boolean isAutoConnected;
 
@@ -108,12 +99,6 @@ public class FXMLDocumentController implements Initializable {
         isAutoConnected = false;
         displayState(ConnectionDisplayState.DISCONNECTED);
 
-        sentMsgsData = FXCollections.observableArrayList();
-
-//        rcvdMsgsData = FXCollections.observableArrayList();
-//        rcvdMsgsListView.setItems(rcvdMsgsData);
-//        rcvdMsgsListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
-
         Runtime.getRuntime().addShutdownHook(new ShutDownThread());
     }
 
@@ -135,11 +120,12 @@ public class FXMLDocumentController implements Initializable {
             if (line != null && !line.equals("")) {
                 displayState(ConnectionDisplayState.CONNECTED);
             }
-            testLabel.setText("Working!");
+//            testLabel.setText("Working!");
             System.out.println("yee");
-//            processString(line);
+            processString(line);
         }
 
+        //Algorithm that processes the given string and outputs a recommended MPH
         public void processString(String line){
             String[] list = line.split(",");
             for(String s : list){
@@ -147,13 +133,13 @@ public class FXMLDocumentController implements Initializable {
             }
 
             int messageId = Integer.parseInt(list[0]);
-            double firstLat = Double.parseDouble(list[1])/1000000;
-            double firstLon = Double.parseDouble(list[2])/1000000;
+            double firstLat = Double.parseDouble(list[1])/10000000;
+            double firstLon = Double.parseDouble(list[2])/10000000;
             int firstMinMin = Integer.parseInt(list[3]);
             int firstMinMS = Integer.parseInt(list[4]);
             int offSetCount = Integer.parseInt(list[5]);
 
-            int time = 0;
+            double time = 0;
 
             Coordinate startLat = new DegreeCoordinate(firstLat);
             Coordinate startLon = new DegreeCoordinate(firstLon);
@@ -163,9 +149,9 @@ public class FXMLDocumentController implements Initializable {
             double lastLon = firstLon;
 
             for(int i = 6; i < (3 * offSetCount) + 6; i+=3){
-                lastLat += (Double.parseDouble(list[i])/1000000);
-                lastLon += (Double.parseDouble(list[i+1])/1000000);
-                time += Integer.parseInt(list[i+2]);
+                lastLat += (Double.parseDouble(list[i])/10000000);
+                lastLon += (Double.parseDouble(list[i+1])/10000000);
+                time += Double.parseDouble(list[i+2])/1000;
 //                System.out.println(""+lastLat+ " " +lastLon);
             }
 
@@ -173,10 +159,16 @@ public class FXMLDocumentController implements Initializable {
             Coordinate endLon = new DegreeCoordinate(lastLon);
             Point end = new Point(endLat, endLon);
 
-            double meters = EarthCalc.getVincentyDistance(start, end);
-            System.out.println(""+meters);
+            double meters = EarthCalc.getDistance(start, end);
+            double meters1 = EarthCalc.getBearing(start, end);
+            double meters2 = EarthCalc.getHarvesineDistance(start, end);
+            System.out.println(""+meters+" "+meters1+" "+meters2);
 
             int mph = (int) Math.round((meters/time) * 2.23694);
+            if(mph > 30){
+                mph = 30;
+            }
+            System.out.println(""+mph);
             testLabel.setText(""+mph);
         }
 
