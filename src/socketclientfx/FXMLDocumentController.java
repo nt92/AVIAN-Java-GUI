@@ -12,16 +12,9 @@ import com.peertopark.java.geocalc.Point;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.SelectionMode;
-import javafx.scene.control.TextField;
-import socketfx.Constants;
+import javafx.scene.control.*;
 import socketfx.FxSocketClient;
 import socketfx.SocketListener;
 
@@ -29,10 +22,6 @@ public class FXMLDocumentController implements Initializable {
 
     @FXML
     private ListView<String> rcvdMsgsListView;
-    @FXML
-    private Button sendButton;
-    @FXML
-    private TextField sendTextField;
     @FXML
     private Button connectButton;
     @FXML
@@ -44,12 +33,18 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private TextField portTextField;
     @FXML
+    private TextField hostTextFieldSend;
+    @FXML
+    private TextField portTextFieldSend;
+    @FXML
     private Label testLabel;
     @FXML
     private Label connectedLabel;
 
-    private final static Logger LOGGER
-            = Logger.getLogger(MethodHandles.lookup().lookupClass().getName());
+    @FXML
+    private ToggleGroup group;
+
+    private final static Logger LOGGER = Logger.getLogger(MethodHandles.lookup().lookupClass().getName());
 
     private ObservableList<String> rcvdMsgsData;
     private ObservableList<String> sentMsgsData;
@@ -60,15 +55,6 @@ public class FXMLDocumentController implements Initializable {
     public enum ConnectionDisplayState { DISCONNECTED, ATTEMPTING, CONNECTED, AUTOCONNECTED, AUTOATTEMPTING }
 
     private FxSocketClient socket;
-
-    private synchronized void waitForDisconnect() {
-        while (connected) {
-            try {
-                wait();
-            } catch (InterruptedException e) {
-            }
-        }
-    }
 
     private synchronized void notifyDisconnected() {
         connected = false;
@@ -86,8 +72,7 @@ public class FXMLDocumentController implements Initializable {
     private void connect() {
         socket = new FxSocketClient(new FxSocketListener(),
                 hostTextField.getText(),
-                Integer.valueOf(portTextField.getText()),
-                Constants.instance().DEBUG_ALL);
+                Integer.valueOf(portTextField.getText()));
         socket.connect();
     }
 
@@ -96,30 +81,22 @@ public class FXMLDocumentController implements Initializable {
             case DISCONNECTED:
                 connectButton.setDisable(false);
                 disconnectButton.setDisable(true);
-                sendButton.setDisable(true);
-                sendTextField.setDisable(true);
                 connectedLabel.setText("Not connected");
                 break;
             case ATTEMPTING:
             case AUTOATTEMPTING:
                 connectButton.setDisable(true);
                 disconnectButton.setDisable(true);
-                sendButton.setDisable(true);
-                sendTextField.setDisable(true);
                 connectedLabel.setText("Attempting connection");
                 break;
             case CONNECTED:
                 connectButton.setDisable(true);
                 disconnectButton.setDisable(false);
-                sendButton.setDisable(false);
-                sendTextField.setDisable(false);
                 connectedLabel.setText("Connected");
                 break;
             case AUTOCONNECTED:
                 connectButton.setDisable(true);
                 disconnectButton.setDisable(true);
-                sendButton.setDisable(false);
-                sendTextField.setDisable(false);
                 connectedLabel.setText("Connected");
                 break;
         }
@@ -224,11 +201,12 @@ public class FXMLDocumentController implements Initializable {
     }
 
     @FXML
-    private void handleSendMessageButton(ActionEvent event) {
-        if (!sendTextField.getText().equals("")) {
-            socket.sendMessage(sendTextField.getText());
-            sentMsgsData.add(sendTextField.getText());
-        }
+    public void handleSendLaneButton(ActionEvent actionEvent) {
+        String s = (String) group.getSelectedToggle().toString();
+        s = s.substring(s.indexOf("'") + 1);
+        s = s.substring(0, s.indexOf("'"));
+        System.out.println(hostTextFieldSend.getText()+portTextFieldSend.getText()+s);
+        socket.send(hostTextFieldSend.getText(), portTextFieldSend.getText(), "LaneNumber,"+s);
     }
 
     @FXML
@@ -242,7 +220,8 @@ public class FXMLDocumentController implements Initializable {
         socket.shutdown();
     }
 
-    public void handleDoneTrajButton(ActionEvent actionEvent) {
-        testLabel.setText("Wait...");
+    @FXML
+    public void handleDoneTrajButton(ActionEvent event) {
+        testLabel.setText("Wait");
     }
 }

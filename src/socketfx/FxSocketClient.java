@@ -50,13 +50,10 @@ public class FxSocketClient extends GenericSocket
     public void onClosedStatus(final boolean isClosed) {
         javafx.application.Platform.runLater(() -> fxListener.onClosedStatus(isClosed));
     }
-
-    @Override
-    protected void closeAdditionalSockets() {}
     
     public FxSocketClient(SocketListener fxListener,
-            String host, int port, int debugFlags) {
-        super(port, debugFlags);
+            String host, int port) {
+        super(port);
         this.host = host;
         this.fxListener = fxListener;
     }

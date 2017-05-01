@@ -1,7 +1,5 @@
-
 package socketfx;
 
-import java.io.*;
 import java.lang.invoke.MethodHandles;
 import java.net.*;
 import java.util.logging.Logger;
@@ -13,16 +11,7 @@ public abstract class GenericSocket implements SocketListener {
     public int port;
     protected DatagramSocket socketConnection = null;
     private Thread socketReaderThread;
-    private int debugFlags;
-    
-    /**
-     * Returns true if the specified debug flag is set.
-     * @param flag Debug flag in question
-     * @return true if the debug flag 'flag' is set.
-     */
-    public boolean debugFlagIsSet(int flag) {
-        return ((flag & debugFlags) != 0);
-    }
+    private Thread socketWriterThread;
 
     /**
      * Set up a connection in the background.  This method returns no status,
@@ -35,10 +24,17 @@ public abstract class GenericSocket implements SocketListener {
             socketReaderThread = new SocketReaderThread();
             socketReaderThread.start();
         } catch (Exception e) {
-            if (debugFlagIsSet(Constants.instance().DEBUG_EXCEPTIONS)) {
-                LOGGER.info(e.getMessage());
-            }
+            LOGGER.info(e.getMessage());
         }  
+    }
+
+    public void send(String host, String port, String s){
+        try {
+            socketWriterThread = new SocketWriterThread(s);
+            socketWriterThread.start();
+        } catch (Exception e) {
+            LOGGER.info(e.getMessage());
+        }
     }
 
     /**
@@ -67,10 +63,8 @@ public abstract class GenericSocket implements SocketListener {
                 socketConnection.close();
             }
 
-            closeAdditionalSockets();
-            if (debugFlagIsSet(Constants.instance().DEBUG_STATUS)) {
-                LOGGER.info("Connection closed");
-            }
+            LOGGER.info("Connection closed");
+
 
             onClosedStatus(true);
         } catch (Exception e){
@@ -78,29 +72,40 @@ public abstract class GenericSocket implements SocketListener {
         }
     }
 
-    /**
-     * This method is called to close any additional sockets that are
-     * internally used.  In some cases (e.g. SocketClient), this method
-     * should do nothing.  In others (e.g. SocketServer), this method should
-     * close the internal ServerSocket instance.
-     */
-    protected abstract void closeAdditionalSockets();
+    class SocketWriterThread extends Thread {
 
-    /**
-     * Send a message in the form of a String to the socket.  A NEWLINE will
-     * automatically be appended to the message.
-     *
-     * @param msg The String message to send
-     */
-    public void sendMessage(String msg) {
-        try {
-            if (debugFlagIsSet(Constants.instance().DEBUG_SEND)) {
-                String logMsg = "send> " + msg;
-                LOGGER.info(logMsg);
+        String s;
+
+        public SocketWriterThread(String s){
+            this.s = s;
+        }
+
+        @Override
+        public void run() {
+            if (socketConnection != null && socketConnection.isConnected()) {
+                onClosedStatus(false) ;
             }
-        } catch (Exception e) {
-            if (debugFlagIsSet(Constants.instance().DEBUG_EXCEPTIONS)) {
-                LOGGER.info(e.getMessage());
+
+            try {
+                String host = "localhost";
+
+                byte[] message = s.getBytes();
+
+                // Get the internet address of the specified host
+                InetAddress address = InetAddress.getByName(host);
+
+                // Initialize a datagram packet with data and address
+                DatagramPacket packet = new DatagramPacket(message, message.length,
+                        address, port);
+
+                // Create a datagram socket, send the packet through it, close it.
+                DatagramSocket dsocket = new DatagramSocket();
+                dsocket.send(packet);
+                dsocket.close();
+            } catch (Exception e) {
+                System.err.println(e);
+            } finally {
+//                System.out.println("Finished Writing");
             }
         }
     }
@@ -114,13 +119,13 @@ public abstract class GenericSocket implements SocketListener {
             }
 
             try {
-                DatagramSocket dsocket = new DatagramSocket(port);
+                socketConnection = new DatagramSocket(port);
                 byte[] buffer = new byte[2048];
 
                 DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
 
                 while (true) {
-                    dsocket.receive(packet);
+                    socketConnection.receive(packet);
 
                     String msg = new String(buffer, 0, packet.getLength());
                     onMessage(msg);
@@ -135,8 +140,7 @@ public abstract class GenericSocket implements SocketListener {
         }
     }
 
-    public GenericSocket(int port, int debugFlags) {
+    public GenericSocket(int port) {
         this.port = port;
-        this.debugFlags = debugFlags;
     }
 }
